@@ -402,7 +402,6 @@
 <wire x1="20.32" y1="40.64" x2="20.32" y2="-45.72" width="0.254" layer="94"/>
 <wire x1="20.32" y1="-45.72" x2="-20.32" y2="-45.72" width="0.254" layer="94"/>
 <wire x1="-20.32" y1="-45.72" x2="-20.32" y2="40.64" width="0.254" layer="94"/>
-<pin name="GND" x="7.62" y="-50.8" length="middle" rot="R90"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -505,7 +504,6 @@
 <connect gate="G$1" pin="DVDD" pad="3"/>
 <connect gate="G$1" pin="DVSS" pad="4"/>
 <connect gate="G$1" pin="EA" pad="32"/>
-<connect gate="G$1" pin="GND" pad="33"/>
 <connect gate="G$1" pin="I2C" pad="1"/>
 <connect gate="G$1" pin="IRQ" pad="23"/>
 <connect gate="G$1" pin="MFIN" pad="7"/>
