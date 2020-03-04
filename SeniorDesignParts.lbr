@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.1.3">
+<eagle version="9.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -475,20 +475,6 @@
 <smd name="1" x="-2.8194" y="0" dx="3.5052" dy="2.2606" layer="1" rot="R90"/>
 <smd name="2" x="2.8194" y="0" dx="3.5052" dy="2.2606" layer="1" rot="R90"/>
 </package>
-<<<<<<< HEAD
-<package name="T2I-02">
-<pad name="P$1" x="0" y="0" drill="0.8"/>
-<pad name="P$2" x="2" y="0" drill="0.8"/>
-<pad name="P$3" x="-7.4" y="0" drill="0.7"/>
-<pad name="P$4" x="5" y="0" drill="0.7"/>
-<wire x1="-8.1" y1="2.8" x2="-8.1" y2="-3.8" width="0.127" layer="21"/>
-<wire x1="-8.1" y1="-3.8" x2="-1.55" y2="-3.8" width="0.127" layer="21"/>
-<wire x1="-1.55" y1="-3.8" x2="0.65" y2="-3.8" width="0.127" layer="21"/>
-<wire x1="0.65" y1="-3.8" x2="5.7" y2="-3.8" width="0.127" layer="21"/>
-<wire x1="5.7" y1="-3.8" x2="5.7" y2="2.8" width="0.127" layer="21"/>
-<wire x1="5.7" y1="2.8" x2="-8.1" y2="2.8" width="0.127" layer="21"/>
-<text x="-8" y="3" size="1.27" layer="21">T2I-02 Conn</text>
-=======
 <package name="SOIC-14">
 <circle x="-4.445" y="4.41" radius="0.1" width="0.2" layer="21"/>
 <circle x="-4.445" y="4.41" radius="0.1" width="0.2" layer="51"/>
@@ -518,7 +504,6 @@
 <smd name="12" x="2.475" y="1.27" dx="1.97" dy="0.6" layer="1" roundness="25"/>
 <smd name="13" x="2.475" y="2.54" dx="1.97" dy="0.6" layer="1" roundness="25"/>
 <smd name="14" x="2.475" y="3.81" dx="1.97" dy="0.6" layer="1" roundness="25"/>
->>>>>>> fa67ba4870d9f3acc08f1a630c3790e1fa0546e3
 </package>
 </packages>
 <symbols>
@@ -724,16 +709,6 @@
 <pin name="1" x="7.62" y="0" visible="off" length="short" direction="pas" rot="R180"/>
 <pin name="2" x="-7.62" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
 </symbol>
-<<<<<<< HEAD
-<symbol name="T2I-02">
-<wire x1="0" y1="0" x2="5.08" y2="0" width="0.1524" layer="94"/>
-<wire x1="5.08" y1="0" x2="5.08" y2="-7.62" width="0.1524" layer="94"/>
-<wire x1="5.08" y1="-7.62" x2="0" y2="-7.62" width="0.1524" layer="94"/>
-<wire x1="0" y1="-7.62" x2="0" y2="0" width="0.1524" layer="94"/>
-<pin name="P$1" x="-5.08" y="-2.54" length="middle"/>
-<pin name="P$2" x="-5.08" y="-5.08" length="middle"/>
-<text x="0" y="0" size="1.778" layer="95">T2I-CONN</text>
-=======
 <symbol name="TSV914AIDT">
 <wire x1="-12.7" y1="17.78" x2="-12.7" y2="-20.32" width="0.4064" layer="94"/>
 <wire x1="-12.7" y1="-20.32" x2="12.7" y2="-20.32" width="0.4064" layer="94"/>
@@ -755,7 +730,6 @@
 <pin name="2OUT" x="17.78" y="10.16" length="middle" direction="out" rot="R180"/>
 <pin name="3OUT" x="17.78" y="7.62" length="middle" direction="out" rot="R180"/>
 <pin name="4OUT" x="17.78" y="5.08" length="middle" direction="out" rot="R180"/>
->>>>>>> fa67ba4870d9f3acc08f1a630c3790e1fa0546e3
 </symbol>
 </symbols>
 <devicesets>
@@ -1005,17 +979,6 @@
 </device>
 </devices>
 </deviceset>
-<<<<<<< HEAD
-<deviceset name="T2I-02">
-<gates>
-<gate name="G$1" symbol="T2I-02" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="T2I-02">
-<connects>
-<connect gate="G$1" pin="P$1" pad="P$1"/>
-<connect gate="G$1" pin="P$2" pad="P$2"/>
-=======
 <deviceset name="TSV914AIDT">
 <gates>
 <gate name="G$1" symbol="TSV914AIDT" x="0" y="0"/>
@@ -1037,7 +1000,6 @@
 <connect gate="G$1" pin="4OUT" pad="14"/>
 <connect gate="G$1" pin="GND" pad="11"/>
 <connect gate="G$1" pin="VCC+" pad="4"/>
->>>>>>> fa67ba4870d9f3acc08f1a630c3790e1fa0546e3
 </connects>
 <technologies>
 <technology name=""/>
