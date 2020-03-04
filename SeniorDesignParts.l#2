@@ -515,6 +515,38 @@
 <wire x1="-8.52" y1="-1.36" x2="-8.52" y2="6.44" width="0.127" layer="21"/>
 <text x="-8.8" y="7.34" size="1.27" layer="21">&gt;NAME</text>
 </package>
+<package name="16-TSSOP">
+<circle x="-4.44" y="2.685" radius="0.1" width="0.2" layer="21"/>
+<circle x="-4.44" y="2.685" radius="0.1" width="0.2" layer="51"/>
+<wire x1="-2.2" y1="2.5" x2="2.2" y2="2.5" width="0.127" layer="51"/>
+<wire x1="-2.2" y1="-2.5" x2="2.2" y2="-2.5" width="0.127" layer="51"/>
+<wire x1="-2.25" y1="2.8" x2="2.25" y2="2.8" width="0.127" layer="21"/>
+<wire x1="-2.25" y1="-2.8" x2="2.25" y2="-2.8" width="0.127" layer="21"/>
+<wire x1="-2.2" y1="2.5" x2="-2.2" y2="-2.5" width="0.127" layer="51"/>
+<wire x1="2.2" y1="2.5" x2="2.2" y2="-2.5" width="0.127" layer="51"/>
+<wire x1="-3.905" y1="2.75" x2="3.905" y2="2.75" width="0.05" layer="39"/>
+<wire x1="-3.905" y1="-2.75" x2="3.905" y2="-2.75" width="0.05" layer="39"/>
+<wire x1="-3.905" y1="2.75" x2="-3.905" y2="-2.75" width="0.05" layer="39"/>
+<wire x1="3.905" y1="2.75" x2="3.905" y2="-2.75" width="0.05" layer="39"/>
+<text x="-3.82" y="-2.977" size="1.27" layer="27" align="top-left">&gt;VALUE</text>
+<text x="-3.82" y="2.977" size="1.27" layer="25">&gt;NAME</text>
+<smd name="1" x="-2.87" y="2.275" dx="1.57" dy="0.41" layer="1" roundness="25"/>
+<smd name="2" x="-2.87" y="1.625" dx="1.57" dy="0.41" layer="1" roundness="25"/>
+<smd name="3" x="-2.87" y="0.975" dx="1.57" dy="0.41" layer="1" roundness="25"/>
+<smd name="4" x="-2.87" y="0.325" dx="1.57" dy="0.41" layer="1" roundness="25"/>
+<smd name="5" x="-2.87" y="-0.325" dx="1.57" dy="0.41" layer="1" roundness="25"/>
+<smd name="6" x="-2.87" y="-0.975" dx="1.57" dy="0.41" layer="1" roundness="25"/>
+<smd name="7" x="-2.87" y="-1.625" dx="1.57" dy="0.41" layer="1" roundness="25"/>
+<smd name="8" x="-2.87" y="-2.275" dx="1.57" dy="0.41" layer="1" roundness="25"/>
+<smd name="9" x="2.87" y="-2.275" dx="1.57" dy="0.41" layer="1" roundness="25"/>
+<smd name="10" x="2.87" y="-1.625" dx="1.57" dy="0.41" layer="1" roundness="25"/>
+<smd name="11" x="2.87" y="-0.975" dx="1.57" dy="0.41" layer="1" roundness="25"/>
+<smd name="12" x="2.87" y="-0.325" dx="1.57" dy="0.41" layer="1" roundness="25"/>
+<smd name="13" x="2.87" y="0.325" dx="1.57" dy="0.41" layer="1" roundness="25"/>
+<smd name="14" x="2.87" y="0.975" dx="1.57" dy="0.41" layer="1" roundness="25"/>
+<smd name="15" x="2.87" y="1.625" dx="1.57" dy="0.41" layer="1" roundness="25"/>
+<smd name="16" x="2.87" y="2.275" dx="1.57" dy="0.41" layer="1" roundness="25"/>
+</package>
 </packages>
 <symbols>
 <symbol name="STM32F410R8T6">
@@ -740,6 +772,16 @@
 <pin name="2OUT" x="17.78" y="10.16" length="middle" direction="out" rot="R180"/>
 <pin name="3OUT" x="17.78" y="7.62" length="middle" direction="out" rot="R180"/>
 <pin name="4OUT" x="17.78" y="5.08" length="middle" direction="out" rot="R180"/>
+</symbol>
+<symbol name="3PINCONN">
+<wire x1="-7.62" y1="7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="7.62" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-12.7" x2="-7.62" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-12.7" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<pin name="A" x="-12.7" y="5.08" length="middle"/>
+<pin name="B" x="-12.7" y="-2.54" length="middle"/>
+<pin name="C" x="-12.7" y="-10.16" length="middle"/>
+<text x="-7.62" y="7.62" size="1.778" layer="95">&gt;NAME</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -1010,6 +1052,23 @@
 <connect gate="G$1" pin="4OUT" pad="14"/>
 <connect gate="G$1" pin="GND" pad="11"/>
 <connect gate="G$1" pin="VCC+" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="3PINCONN">
+<gates>
+<gate name="G$1" symbol="3PINCONN" x="-2.54" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="3PINCONN">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="B" pad="B"/>
+<connect gate="G$1" pin="C" pad="C"/>
 </connects>
 <technologies>
 <technology name=""/>
