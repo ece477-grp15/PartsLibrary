@@ -505,16 +505,6 @@
 <smd name="13" x="2.475" y="2.54" dx="1.97" dy="0.6" layer="1" roundness="25"/>
 <smd name="14" x="2.475" y="3.81" dx="1.97" dy="0.6" layer="1" roundness="25"/>
 </package>
-<package name="3PINCONN">
-<pad name="B" x="0" y="2.54" drill="1.6" diameter="2.5"/>
-<pad name="C" x="5.08" y="2.54" drill="1.6" diameter="2.5"/>
-<pad name="A" x="-5.08" y="2.54" drill="1.6" diameter="2.5"/>
-<wire x1="-8.52" y1="6.44" x2="8.52" y2="6.44" width="0.127" layer="21"/>
-<wire x1="8.52" y1="6.44" x2="8.52" y2="-1.36" width="0.127" layer="21"/>
-<wire x1="8.52" y1="-1.36" x2="-8.52" y2="-1.36" width="0.127" layer="21"/>
-<wire x1="-8.52" y1="-1.36" x2="-8.52" y2="6.44" width="0.127" layer="21"/>
-<text x="-8.8" y="7.34" size="1.27" layer="21">&gt;NAME</text>
-</package>
 <package name="16-TSSOP">
 <circle x="-4.44" y="2.685" radius="0.1" width="0.2" layer="21"/>
 <circle x="-4.44" y="2.685" radius="0.1" width="0.2" layer="51"/>
@@ -772,16 +762,6 @@
 <pin name="2OUT" x="17.78" y="10.16" length="middle" direction="out" rot="R180"/>
 <pin name="3OUT" x="17.78" y="7.62" length="middle" direction="out" rot="R180"/>
 <pin name="4OUT" x="17.78" y="5.08" length="middle" direction="out" rot="R180"/>
-</symbol>
-<symbol name="3PINCONN">
-<wire x1="-7.62" y1="7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
-<wire x1="7.62" y1="7.62" x2="7.62" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="7.62" y1="-12.7" x2="-7.62" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="-12.7" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
-<pin name="A" x="-12.7" y="5.08" length="middle"/>
-<pin name="B" x="-12.7" y="-2.54" length="middle"/>
-<pin name="C" x="-12.7" y="-10.16" length="middle"/>
-<text x="-7.62" y="7.62" size="1.778" layer="95">&gt;NAME</text>
 </symbol>
 <symbol name="TMUX1112PWR">
 <wire x1="-12.7" y1="20.32" x2="15.24" y2="20.32" width="0.254" layer="94"/>
@@ -1073,23 +1053,6 @@
 <connect gate="G$1" pin="4OUT" pad="14"/>
 <connect gate="G$1" pin="GND" pad="11"/>
 <connect gate="G$1" pin="VCC+" pad="4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="3PINCONN">
-<gates>
-<gate name="G$1" symbol="3PINCONN" x="-2.54" y="2.54"/>
-</gates>
-<devices>
-<device name="" package="3PINCONN">
-<connects>
-<connect gate="G$1" pin="A" pad="A"/>
-<connect gate="G$1" pin="B" pad="B"/>
-<connect gate="G$1" pin="C" pad="C"/>
 </connects>
 <technologies>
 <technology name=""/>
